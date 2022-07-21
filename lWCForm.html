@@ -1,0 +1,40 @@
+<template>
+        <!--  <lightning-record-form
+        object-api-name={objectApiName}
+        lightning-input-fields={fields}
+        onsuccess={handleSuccess}>
+        </lightning-record-form> -->
+        <lightning-record-edit-form object-api-name="Student__c"  onsuccess={handleSuccess}>
+            <lightning-messages> </lightning-messages>
+            <lightning-card title="Basic Information">
+            <lightning-input-field field-name="Name"></lightning-input-field>
+            <lightning-input-field field-name="Fathers_Name__c"></lightning-input-field>             
+            <lightning-input-field field-name="Date_of_Birth__c"></lightning-input-field>
+            <lightning-input-field field-name="Mothers_Name__c"></lightning-input-field>
+            <lightning-input-field field-name="Blood_Group__c"></lightning-input-field>             
+            <lightning-input-field field-name="Number_of_Siblings__c"></lightning-input-field>
+            <lightning-input-field field-name="School_Name__c"></lightning-input-field>             
+            <lightning-input-field field-name="Nationality__c"></lightning-input-field>
+            </lightning-card>
+
+            <lightning-card title="Contact Information">
+        
+          <lightning-input-field field-name="Mobile_Phone__c"></lightning-input-field>
+          <lightning-input-field field-name="Emergency_Phone_Number__c"></lightning-input-field>             
+          <lightning-input-field field-name="Landline__c"></lightning-input-field>
+
+        </lightning-card>
+
+        <lightning-card title="Address Information">
+
+            <lightning-input-field field-name="Flat_Society_Details__c"></lightning-input-field>
+            <lightning-input-field field-name="Area_Sub_Region__c"></lightning-input-field>             
+            <lightning-input-field field-name="District__c"></lightning-input-field>
+            <lightning-input-field field-name="City_Village__c"></lightning-input-field>
+            <lightning-input-field field-name="State__c"></lightning-input-field>             
+            <lightning-input-field field-name="Country__c"></lightning-input-field>
+        </lightning-card>
+             <lightning-button class="slds-m-top_small" type="submit" label="Create" onclick={handleRecordSave}>
+             </lightning-button>
+             </lightning-record-edit-form>
+</template>
